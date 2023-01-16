@@ -1,6 +1,14 @@
 #include<stdio.h>
 #include<stdbool.h>
-/*
+
+void find1(int n){
+
+    for (int i = 0; s[i] != '\0'; i++)
+    {
+        if (s[i] == 1)
+        {
+            return 
+        }
 
 int main(){
     
@@ -17,6 +25,23 @@ int main(){
          {
             if (s[i]==1)
             {
+                for (int i = 0; s[i] != '\0'; i++)
+                {
+                    if (s[i]== 9)
+                    {
+                        for (int i = 0; s[i] != '\0'; i++)
+                        {
+                            if (s[i]== 7)
+                            {
+                                printf("YES");
+                                break;
+                            }
+                            
+                        }
+                        
+                    }
+                    
+                }
                 
             }
             
@@ -32,9 +57,10 @@ int main(){
 
     return 0;
 }
-*/
 
 
+
+/*
 bool includes(char s[], char length, int value){
 
     for (int i = 0; s[i] != length; i++)
@@ -63,3 +89,5 @@ int main(void){
     
     
 }
+
+*/
