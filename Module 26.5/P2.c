@@ -14,7 +14,7 @@ void pass_reference(int n, int arr[]){
     {
         for (int j = i; j < n; j++)
         {
-            if (arr[i]> arr[i+1])
+            if (arr[i]> arr[j+1])
             {
                 swap(&arr[i], &arr[j]);
             }
