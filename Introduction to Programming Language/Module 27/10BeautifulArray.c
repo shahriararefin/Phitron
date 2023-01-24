@@ -9,17 +9,17 @@
         for (int i = 0; i < n; i++)
         {
             int* array[i] = &arr[0];
-            if (array[i]%10==7 )
+            if (*array[i]%10==7 )
             {
                 count++;
-                array[i]/=10;
+                *array[i]/=10;
                 *array[i++];
             }
             
             
         }
 
-       // printf("c_value--->%d\n", c_value);
+        //printf("c_value--->%d\n", c_value);
         //printf("count--->%d\n", count);
 
         if (c_value<= count)
