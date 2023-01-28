@@ -1,6 +1,6 @@
 #include<stdio.h>
 
-    int is_prime(){
+    int is_prime(int n){
 
 
         
@@ -17,7 +17,7 @@ int main(){
         scanf("%d", &arr[i]);
     }
     
-    is_prime()
+    is_prime(n);
 
     return 0;
 }
