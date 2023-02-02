@@ -13,5 +13,11 @@ int main(){
         scanf("%d",&ptr[i]);
     }
 
+    for (int i = 0; i < n; i++)
+    {
+        printf("%d ", ptr[i]);
+    }
+    
+
     return 0;
 }
