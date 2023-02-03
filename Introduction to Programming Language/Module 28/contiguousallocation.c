@@ -7,7 +7,7 @@ int main(){
 
     int* ptr;
 
-    ptr=(int*)malloc(n*sizeof(int));
+    ptr=(int*)calloc(n,sizeof(int));
 
     for(int i=0;i<n;i++){
         scanf("%d",&ptr[i]);
