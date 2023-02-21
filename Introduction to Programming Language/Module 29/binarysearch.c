@@ -12,14 +12,31 @@ int main(){
         scanf("%d", &arr[i]);
     }
 
+    scanf("%d", &key);
+
     min=0;
     max=n-1;
     mid=(min+max)/2;
 
-    int key;
-    scanf("%d", &key);
-
     
+   
+while (min <= max) {
+    if (arr[mid] < key)
+      min = mid + 1;
+
+    else if (arr[mid] == key) {
+      printf("%d found at location %d.\n", key, mid+1);
+      break;
+    }
+
+    else
+      max = mid - 1;
+
+    mid = (min + max)/2;
+  }
+  if (min > max)
+    printf("Not found! %d isn't present in the list.\n", key);
+
 
     return 0;
 }
